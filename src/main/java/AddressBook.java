@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class AddressBook {
     public static void main(String[] args) {
+        System.out.println("WelCome To AddressBook Program");
         Scanner sc = new Scanner (System.in);
         System.out.println("Enter the first name");
-       String  fName = sc.next();
+        String  fName = sc.next();
         System.out.println("Enter the last Name");
-         String lName = sc.next();
+        String lName = sc.next();
         System.out.println("Enter the city");
         String City = sc.next();
         System.out.println("Enter the Address");
