@@ -19,12 +19,17 @@ public class AddressBook {
         System.out.println("Enter the Number");
         Number = sc.nextInt();
     }
-    void display(){
-        System.out.println(Name+" "+Address+" "+City+" "+Email+" "+Number+" ");
+    void changeCity(String Edit){
+        Scanner sc = new Scanner(System.in);
+        if(Edit.equals(Name));
+        System.out.println("Enter the New City");
+        City = sc.nextLine();
+        System.out.println(Name+" "+Address+" "+City+" "+Email+ " "+Number+" ");
     }
+
     public static void main(String[] args) {
        AddressBook ads = new AddressBook();
-       ads.display();
        ads.AddNew();
+       ads.changeCity("New City ");
     }
 }
