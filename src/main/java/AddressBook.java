@@ -1,4 +1,4 @@
-import java.util.Scanner;
+simport java.util.Scanner;
 
 public class AddressBook {
     String Name ;
@@ -19,17 +19,22 @@ public class AddressBook {
         System.out.println("Enter the Number");
         Number = sc.nextInt();
     }
-    void changeCity(String Edit){
-        Scanner sc = new Scanner(System.in);
-        if(Edit.equals(Name));
-        System.out.println("Enter the New City");
-        City = sc.nextLine();
-        System.out.println(Name+" "+Address+" "+City+" "+Email+ " "+Number+" ");
+    void deletePerson(String name) {
+        if (Name.equals(name)) {
+            Name = null;
+            Number = 0;
+            Address = null;
+            City = null;
+            Email = null;
+            System.out.println("The Data is Deleted");
+        }else{
+            System.out.println("Data Is Not Deleted ");
+        }
     }
 
     public static void main(String[] args) {
        AddressBook ads = new AddressBook();
        ads.AddNew();
-       ads.changeCity("New City ");
+       ads.deletePerson(ads.Name);
     }
 }
